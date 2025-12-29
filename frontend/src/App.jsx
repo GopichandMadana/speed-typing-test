@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { RefreshCcw, Send, Shield, Plus, Trash2 } from "lucide-react";
 
-const API = "http://localhost:4000";
+const API = "https://speed-typing-backend.onrender.com";
 
 function diffHighlight(target, typed) {
   const maxLen = Math.max(target.length, typed.length);
