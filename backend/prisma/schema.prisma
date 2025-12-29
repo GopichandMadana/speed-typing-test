@@ -1,0 +1,14 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Sentence {
+  id        Int      @id @default(autoincrement())
+  text      String   @unique
+  createdAt DateTime @default(now())
+}
